@@ -1,0 +1,31 @@
+@import '../common/vars';
+
+.top-menu {
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        padding: 16px 15px;
+        color: $white;
+        text-transform: uppercase;
+        cursor: default;
+
+        &:hover {
+            background-color: $dark-blue; 
+        }
+
+        a {
+            color: $white;
+        }
+    }
+
+    &__submenu {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100%);
+        text-transform: capitalize;
+    }
+}
