@@ -12,16 +12,20 @@
         color: $white;
         text-transform: uppercase;
         cursor: default;
+        transition: .2s;
 
         &:hover {
-            color: $silver-calice; 
+            color: $silver-calice;
+            transition: .2s;
         }
 
         a {
             color: $white;
+            transition: .2s;
 
             &:hover {
-                color: $silver-calice; 
+                color: $silver-calice;
+                transition: .2s;
             }
         }
 
@@ -36,5 +40,11 @@
                 }
             }
         }
+    }
+
+    &__submenu {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100%);
     }
 }

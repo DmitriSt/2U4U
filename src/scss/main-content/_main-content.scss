@@ -1,6 +1,8 @@
 @import '../common/mixins';
+@import '../common/vars';
 
 .main-content {
+    padding-top: $header-height;
 
     &__container {
         @include content-width;
