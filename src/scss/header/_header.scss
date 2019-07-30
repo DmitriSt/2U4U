@@ -1,6 +1,9 @@
 @import '../common/vars';
 @import '../common/_mixins';
+@import './logo';
 @import './top-menu';
+@import './submenu';
+@import '../inputs/input';
 
 .header {
     width: 100%;
@@ -16,8 +19,6 @@
 
     &__container {
         @include content-width;
-        padding: 0 10px;
-        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
     }
@@ -27,8 +28,12 @@
         align-items: center;
         justify-content: center;
     }
-}
 
-.main-content {
-    padding-top: $header-height;
+    &__search {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        min-width: 300px;
+    }
 }

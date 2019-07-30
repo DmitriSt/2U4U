@@ -1,0 +1,14 @@
+@import '../common/vars';
+
+.submenu {
+    background: $blue;
+    padding: 5px 10px 10px;
+    text-transform: capitalize;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+
+    &__item {
+        padding: 2px 0;
+    }
+}

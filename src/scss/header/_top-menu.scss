@@ -12,13 +12,33 @@
         color: $white;
         text-transform: uppercase;
         cursor: default;
+        transition: .2s;
 
         &:hover {
-            background-color: $dark-blue; 
+            color: $silver-calice;
+            transition: .2s;
         }
 
         a {
             color: $white;
+            transition: .2s;
+
+            &:hover {
+                color: $silver-calice;
+                transition: .2s;
+            }
+        }
+
+        &:first-child {
+
+            &:hover {
+
+                .submenu {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: .2s;
+                }
+            }
         }
     }
 
@@ -26,6 +46,5 @@
         position: absolute;
         bottom: 0;
         transform: translateY(100%);
-        text-transform: capitalize;
     }
 }
