@@ -14,18 +14,27 @@
         cursor: default;
 
         &:hover {
-            background-color: $dark-blue; 
+            color: $silver-calice; 
         }
 
         a {
             color: $white;
-        }
-    }
 
-    &__submenu {
-        position: absolute;
-        bottom: 0;
-        transform: translateY(100%);
-        text-transform: capitalize;
+            &:hover {
+                color: $silver-calice; 
+            }
+        }
+
+        &:first-child {
+
+            &:hover {
+
+                .submenu {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: .2s;
+                }
+            }
+        }
     }
 }

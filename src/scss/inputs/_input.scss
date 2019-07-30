@@ -1,0 +1,17 @@
+@import '../common/vars';
+
+.input {
+    padding: 5px 7px;
+    border: none;
+    border-radius: 2px;
+    background-color: $mercury;
+    width: 100%;
+    outline-style: none;
+    color: $input-color;
+    font-size: 13px;
+
+    &::placeholder {
+        font-size: 11px;
+        color: $input-color;
+    }
+}

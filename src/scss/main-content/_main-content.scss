@@ -1,0 +1,8 @@
+@import '../common/mixins';
+
+.main-content {
+
+    &__container {
+        @include content-width;
+    }
+}

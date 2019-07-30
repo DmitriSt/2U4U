@@ -1,0 +1,17 @@
+@import '../common/vars';
+@import '../common/mixins';
+@import './footer-list';
+
+.footer {
+    width: 100%;
+    background-color: $blue;
+    display: flex;
+    justify-content: space-between;
+
+    &__container {
+        @include content-width;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

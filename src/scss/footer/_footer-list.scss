@@ -1,0 +1,29 @@
+@import '../common/vars';
+
+.footer-list {
+    color: $white;
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    &__items {
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    &__item {
+        padding: 5px;
+
+        a {
+            color: $white;
+            transition: .2s;
+
+            &:hover {
+                color: $silver-calice; 
+                transition: .2s;
+            }
+        }
+    }
+}
