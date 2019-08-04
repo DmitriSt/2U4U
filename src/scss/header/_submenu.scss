@@ -9,6 +9,28 @@
     transition: .2s;
 
     &__item {
-        padding: 2px 0;
+        position: relative;
+        padding: 5px 0 5px 20px;
+        transition: .5s;
+
+        &:hover {
+
+            a {
+                color: $white;
+            }
+
+            .submenu__item-icon {
+                color: $yellow;
+                transition: .5s;
+            }
+        }
+    }
+
+    &__item-icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-59%);
+        color: $white;
     }
 }
