@@ -1,14 +1,41 @@
 @import '../common/vars';
 
 .catalog {
+    position: relative;
     display: flex;
     padding: 20px 0;
 
     &__filter {
-        position: relative;
-        min-width: 25%;
+        position: fixed;
+        width: 220px;
         padding: 10px;
         background-color: $blue;
+        opacity: 1;
+        transition: .5s;
+    }
+
+    &__filter_closed {
+        width: 0;
+        padding-left: 0;
+        padding-right: 0;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    &__filter-open {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        cursor: pointer;
+        // transition-delay: .7s;
+    }
+
+    &__filter-open_show {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: .7s;
     }
 
     &__filter-icon {
@@ -21,8 +48,18 @@
     &__items {
         display: flex;
         flex-wrap: wrap;
-        min-width: 75%;
+        width: 100%;
+        padding-left: 240px;
+        transition: .5s;
+    }
+
+    &__items_full-width {
         padding-left: 20px;
+        transition: .5s;
+
+        .catalog__item {
+            width: 25%;
+        }
     }
 
     &__item {
@@ -31,6 +68,7 @@
     }
 
     &__item-inner {
+        min-height: 300px;
         border: 1px solid #000;
     }
 }
