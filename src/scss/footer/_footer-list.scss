@@ -10,20 +10,32 @@
 
     &__items {
         margin-bottom: 10px;
-        padding-left: 20px;
     }
 
     &__item {
-        padding: 5px;
+        position: relative;
+        padding: 5px 5px 5px 25px;
+        cursor: default;
+
+        &:hover {
+
+            .footer-list__item-icon {
+
+                &.fa-lightbulb {
+                    color: $yellow;
+                    transition: .5s;
+                }
+            }
+        }
 
         a {
             color: $white;
-            transition: .2s;
-
-            &:hover {
-                color: $silver-calice; 
-                transition: .2s;
-            }
         }
+    }
+
+    &__item-icon {
+        position: absolute;
+        left: 0;
+        transition: .5s;
     }
 }
