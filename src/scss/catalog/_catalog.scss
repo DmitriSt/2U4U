@@ -1,0 +1,28 @@
+@import '../common/vars';
+
+.catalog {
+    display: flex;
+    padding: 20px 0;
+
+    &__filter {
+        min-width: 25%;
+        padding: 10px;
+        background-color: $blue;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 75%;
+        padding-left: 20px;
+    }
+
+    &__item {
+        width: 33.3%;
+        padding: 0 10px 20px;
+    }
+
+    &__item-inner {
+        border: 1px solid #000;
+    }
+}

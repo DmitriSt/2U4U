@@ -26,6 +26,7 @@ var path = {
     //папка откуда брать файлы
     src: { 
         html: 'src/[^_]*.html', 
+        // html: 'src/**/*.html',
         js: 'src/js/**/*.js', 
         style: 'src/scss/**/*.scss', 
         img: 'src/images/**/*.{jpg,jpeg,png}', 
@@ -147,7 +148,7 @@ gulp.task('webserver', function () {
     browserSync(config);
 });
 
-// nаск для очистки папки проекта
+// таск для очистки папки проекта
 
 gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
