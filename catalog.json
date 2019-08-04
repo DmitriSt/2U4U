@@ -1,52 +1,70 @@
 {
-  "lamps": [
+  "lamp": [
     {
       "id": 1,
-      "title": "json-server",
+      "type": "lamp",
+      "title": "G4",
       "author": "typicode"
     },
     {
+      "id": 6,
+      "type": "lamp",
+      "title": "G9",
+      "author": "lord=of-fear"
+    }
+  ],
+  "light": [
+    {
       "id": 2,
-      "title": "test!",
+      "type": "light",
+      "title": "JD167",
       "author": "Spider_NET"
     },
     {
       "id": 3,
-      "title": "test!",
+      "type": "light",
+      "title": "1527",
       "author": "lord=of-fear"
-    },
+    }
+  ],
+  "commerce": [
     {
       "id": 4,
-      "title": "json-server",
+      "type": "commerce",
+      "title": "60x60",
       "author": "typicode"
-    },
-    {
-      "id": 5,
-      "title": "test!",
-      "author": "Spider_NET"
-    },
-    {
-      "id": 6,
-      "title": "test!",
-      "author": "lord=of-fear"
-    },
-    {
-      "id": 7,
-      "title": "test!",
-      "author": "lord=of-fear"
     },
     {
       "id": 8,
+      "type": "commerce",
       "title": "json-server",
       "author": "typicode"
+    }
+  ],
+  "decor": [
+    {
+      "id": 5,
+      "type": "decor",
+      "title": "Лента RGB",
+      "author": "Spider_NET"
+    }
+  ],
+  "kit": [
+    {
+      "id": 7,
+      "type": "kit",
+      "title": "Шнур",
+      "author": "lord=of-fear"
     },
     {
       "id": 9,
+      "type": "kit",
       "title": "test!",
       "author": "Spider_NET"
     },
     {
       "id": 10,
+      "type": "kit",
       "title": "test!",
       "author": "lord=of-fear"
     }
